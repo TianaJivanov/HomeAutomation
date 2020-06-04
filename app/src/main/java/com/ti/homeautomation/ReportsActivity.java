@@ -123,7 +123,7 @@ public class ReportsActivity extends AppCompatActivity {
             while (rs.next()) {
                 String row = " ";
                 for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                    row += "      " + rs.getString(i);
+                    row += "---" + rs.getString(i);
                 }
                 results.add(row);
             }
